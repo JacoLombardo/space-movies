@@ -1,0 +1,6 @@
+body {
+  /* background-image: url(../../public/Media/sky.jpg); */
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+  height: 100vh;
+  overflow: hidden;
+}

@@ -1,0 +1,178 @@
+@keyframes run {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  50.00001% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes move {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes moveFirst {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes moveSecond {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.loader_planet {
+  /* width: 50px;
+  height: 50px; */
+}
+.planet_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 5s;
+}
+
+.planets {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.initialPlanet {
+  position: absolute;
+  left: 100%;
+  top: 150px;
+  animation: moveFirst 5s linear 0.2s;
+  animation-iteration-count: 1;
+  width: 150px;
+}
+.rocket {
+  position: absolute;
+  left: -30%;
+  top: 150px;
+  animation: move 5s linear 5s infinite;
+  width: 150px;
+}
+
+.firstPlanet {
+  position: absolute;
+  left: 0%;
+  top: 80px;
+  animation: moveSecond 12s linear 0.2s infinite;
+  width: 150px;
+}
+
+.secondPlanet {
+  position: absolute;
+  left: -30%;
+  top: 200px;
+  animation: move 8s linear 0s infinite;
+  width: 150px;
+}
+
+.thirdPlanet {
+  top: 250px;
+  left: -30%;
+  position: absolute;
+  animation: move 11s linear 1s infinite;
+  width: 150px;
+}
+
+/* STARS */
+
+.stars1 {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+  /* border: 1px dashed purple; */
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* animation: space 180s ease-in-out infinite; */
+  background-image: radial-gradient(
+      1px 1px at 25px 5px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+
+.stars2 {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+  /* border: 1px dashed purple; */
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* animation: space 240s ease-in-out infinite; */
+  background-image: radial-gradient(
+      1px 1px at 75px 125px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+
+.stars3 {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+  /* border: 1px dashed purple; */
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* animation: space 300s ease-in-out infinite; */
+  background-image: radial-gradient(
+      1px 1px at 10px 10px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+
+/* @keyframes space {
+  40% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  60% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
